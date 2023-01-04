@@ -1,0 +1,502 @@
+* {
+  margin: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  /* display: block; */
+}
+
+#nav-bar {
+  text-align: center;
+}
+h1 {
+  font-size: x-large;
+}
+
+/*                                                             phần 1  xây dựng baner */
+#banner img {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+#banner div {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  color: #fff;
+}
+#banner {
+  padding-bottom: 50px !important;
+}
+
+/*                                                            phần 2   xây dựng nav */
+.iconbanner {
+  color: rgb(0, 162, 255);
+}
+#nav-bar .container a {
+  color: black;
+  text-transform: uppercase;
+}
+#nav-bar .container a:hover {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+#nav-bar .container a,
+#nav-bar .container div {
+  text-decoration: none;
+}
+#nav-bar .container div h1 {
+  font-size: large;
+}
+#nav-bar .container {
+  padding-top: 0px;
+}
+#nav-bar .container div {
+  display: inline-block;
+  padding-bottom: 0px;
+  vertical-align: middle;
+  text-align: center;
+}
+/*     phần 3 xây dựng about gồm 2 mục: mục tiêu nghề nghiệp và thông tin cá nhân > dùng grid layout*/
+/* #about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+#about .container {
+  width: 100vw;
+}
+#target h1,
+#target p {
+  text-align: justify;
+  padding-bottom: 50px;
+  line-height: 25px;
+}
+#personal-info h1,
+#personal-info ul,
+#personal-info div {
+  text-align: justify;
+  padding-bottom: 50px;
+  line-height: 25px;
+}
+#target {
+  padding-top: 30px !important;
+  background: #e7e2e2d3;
+
+  padding-left: 30px !important;
+  padding-right: 50px !important;
+}
+#personal-info {
+  margin-top: 0px !important;
+  padding-top: 30px;
+  background: #e0d6d6d3;
+  
+}
+#personal-info ul li {
+  list-style: none;
+}
+.addicon a i {
+  padding-right: 20px;
+  color: rgb(0, 162, 255);
+}
+/* phần 4 thông tin nghề nghiệp : kinh nghiệm, kỹ năng, ngôn ngữ, hoặt động, học vấn, sở thích> dùng grid */
+/* #job-info .container {           sử dụng bootstrap nên ko dùng phần này nữa
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  line-height: 25px;
+} */
+
+.infodetail {
+  border: black 1px solid;
+  padding-right: 0px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.jobicon {
+  font-size: 50px;
+  padding-top: 20px;
+}
+.infodetail h1 {
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.infodetail ul {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-column: 1 / span 2;
+}
+/* xử lý job-exp */
+
+.sine {
+  display: inline-block;
+}
+.greencover {
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+
+  background-color: rgb(0, 162, 255);
+  border-radius: 30%;
+}
+
+.infodetail ul li div {
+  padding-right: 0px;
+}
+.infodetail ul li {
+  padding-bottom: 30px;
+}
+.infodetail ul li::marker {
+  color: rgb(0, 162, 255);
+  font-size: 30px;
+}
+/* xử lý job-know dùng form của job-exp giờ chỉ chỉnh vào đúng cột với kỹ năng thôi */
+/* .job-kno {
+  grid-column: 2/3;
+  grid-row: 2/3;
+} */
+/* xử lý job-act dùng form của job-exp giờ chỉ chỉnh vào đúng cột của exp thôi*/
+/* .job-act {
+  grid-column: 1/2;
+} */
+/* xử lý job-hob sở thích                     sử dụng fex*/
+.job-hob {
+  padding-bottom: 0px;
+}
+.hobby {
+  /* grid-column: 1 / span 2; */
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+.hobby div {
+  padding-right: 0;
+  text-align: center;
+  flex: 1;
+}
+
+.hobby div i {
+  height: 40px;
+  width: 40px;
+  color: rgb(0, 162, 255);
+  font-size: 20px;
+  border: 1px solid rgb(0, 162, 255);
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+/* xử lý kỹ năng và ngôn ngữ  */
+.job-ski {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+/* .job-lan {
+  grid-column: 3/4;
+  grid-row: 1/2;
+} */
+.lanskidetail {
+  grid-column: 1 / span 2;
+  padding-left: 20px;
+  padding-right: 0px;
+  padding-bottom: 50px;
+}
+.spangreen {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.spanwhite {
+  background: #8d9ba1;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+/* xử lý phần chứng chỉ giải thưởng >>> dùng grid đưa vào các css cho các breakpoint*/
+#certificate .container {
+  padding-top: 20px;
+}
+.cc123,
+cc2 {
+  border-bottom: #d6c08d 1px solid;
+}
+.container .cc123 {
+  padding: 30px 0px 30px 0px;
+}
+.cc123 img {
+  width: 300px;
+  height: 230px;
+}
+.cc123 .textofcer {
+  padding-left: 5px;
+  padding-right: 0px;
+  line-height: 30px;
+  vertical-align: top;
+  display: inline-block;
+}
+.cc2 img {
+  border-left: 1px solid #d6c08d;
+}
+.cc3 {
+  border-bottom: none;  
+}
+/*      xử lý phần 8 dự án */
+/* xử lý chia ra 3 dự án bằng grid  */
+
+#project div div {
+  padding-right: 0px;
+}
+#project .container div {
+  border: 1px solid #c8c1bf;
+}
+/* cả 3 dự án có chung form  */
+/* chỉnh bức ảnh của dự án */
+#project div div a img {
+  width: 30vw;
+  height: 280px;
+  object-fit: cover;
+}
+/* chỉnh tên các dự án */
+#project div div div:nth-child(2) {
+  text-transform: uppercase;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+}
+/* chỉnh thời gian dự án */
+#project div div div:nth-child(3) {
+  height:max-content  ;
+  line-height: 40px;
+  padding-left: 20px;
+  border-top: rgb(166, 173, 179) 1px solid;
+  border-bottom: rgb(166, 173, 179) 1px solid;
+}
+#project div div div span {
+  background-color: rgb(0, 162, 255);
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+
+  padding: 0 20px 0 20px;
+  border-radius: 25%;
+  vertical-align: middle;
+  text-align: center;
+}
+/* chỉnh table mô tả cụ thể các dự án */
+#project div div table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+#project div div table tr td:first-child {
+  width: 80px;
+  padding-left: 10px;
+  text-align: left;
+  vertical-align: super;
+}
+#project div div table tr:nth-child(2),
+#project div div table tr:nth-child(3) {
+  border-top: rgb(166, 173, 179) 1px solid;
+}
+/* xử lý phần footer liên hệ dùng inline block */
+#footer {
+  text-align: center;
+  background-color: #d0d6d8;
+  width: 100vw;
+}
+#footer div ul li {
+  display: inline-block;
+  padding-right: 25px;
+}
+#footer div ul li a i {
+  color: #199cdb;
+  font-size: x-large;
+}
+
+#footer div ul li a {
+  color: black;
+  text-decoration-line: none;
+}
+/* xử lý mục 11 nâng cao chèn ảnh vào nav, để ko bị mất nội dung cũ mình sẽ dùng psuedo để chèn vào một content ảnh */
+/* cách 1 chèn vào thẻ div tên mình bằng một content
+#nav-bar .container div {
+  position: relative;
+}
+#nav-bar .container div::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 40%;
+  transform: translate(-50%, 0);
+  width: 30px;
+  height: 40px;
+  transform: scale(5);
+  border: 2px white solid;
+  border-radius: 50%;
+  background-image: url("/images/6868.JPG");
+  background-size: cover;
+} */
+/* cách 2 */
+/* #nav-bar .container {
+  position: absolute;
+  text-align: center;
+  top: 80.5%;
+  left: 10vw;
+}
+#nav-bar .container div img {
+  transform: scale(4);
+  border: 2px white solid;
+  border-radius: 50%;
+} */
+/* cách 3 bỏ vào luôn một hình ảnh */
+#nav-bar .container img {
+  transform: scale(4);
+  border: 2px white solid;
+  border-radius: 50%;
+}
+#nav-bar .container {
+  padding-top: 10px;
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#nav-bar .container div {
+  flex-grow: 0.5;
+}
+#banner {
+  padding-bottom: 0px !important;
+}
+/* make a class hidden to show or hidden a content y want */
+.hide {
+ display: none;
+}
+
+.viewmore {
+
+}
+/* 10. Chức năng ẩn thông tin nghề nghiệp   */
+/* Make contents when hover to h1 element of section .job-info */
+.viewadd {
+  color: white;
+  background-color: #199edbca;
+  font-size: small;
+  width: 50%;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10%;
+  line-height: 20px;
+}
+/* Make view more and view less for 6 content exp, kno, act, hob, ski */
+/* 1 xây dựng mục view more less cho phần job-exp  */
+#job-info .container div h1{
+  position: relative;
+  min-height: 150px;
+}
+.viewmoreexp {
+  position: absolute;
+  z-index: 1;
+  buttom: 30vw;
+  left: 20px;
+}
+.viewlessexp {
+  position: absolute;
+  z-index: 2;
+  buttom: 30vw;
+  left: 20px;
+}
+/* 2 xây dựng view more less cho phần job-kno */
+
+.viewmorekno {
+  position: absolute;
+  z-index: 1;
+  buttom: 30vw;
+  left: 20px;
+}
+.viewlesskno {
+  position: absolute;
+  z-index: 2;
+  buttom: 30vw;
+  left: 20px;
+}
+/* 3 xây dựng view more less cho phần job-act */
+
+.viewmoreact {
+  position: absolute;
+  z-index: 1;
+  buttom: 30vw;
+  left: 20px;
+}
+.viewlessact {
+  position: absolute;
+  z-index: 2;
+  buttom: 30vw;
+  left: 20px;
+}
+
+/* 4 xây dựng view more less cho phần job-hob */
+
+.viewmorehob {
+  position: absolute;
+  z-index: 1;
+  buttom: 30vw;
+  left: 20px;
+}
+.viewlesshob {
+  position: absolute;
+  z-index: 2;
+  buttom: 30vw;
+  left: 20px;
+}
+
+/* 5 xây dựng view more less cho phần job-lan */
+
+.viewmorelan {
+  position: absolute;
+  z-index: 1;
+  buttom: 30vw;
+  left: 20px;
+}
+.viewlesslan {
+  position: absolute;
+  z-index: 2;
+  buttom: 30vw;
+  left: 20px;
+}
+
+/* 6 xây dựng view more less cho phần job-ski */
+
+.viewmoreski {
+  position: absolute;
+  z-index: 1;
+  buttom: 30vw;
+  left: 20px;
+}
+.viewlessski {
+  position: absolute;
+  z-index: 2;
+  buttom: 30vw;
+  left: 20px;
+}
+
+

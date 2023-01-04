@@ -1,0 +1,108 @@
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    
+     /* yêu cầu: 3. Phần Navbar ở tablet ẩn hình ảnh  */
+    #nav-bar .container div {
+        display : none;
+    }
+    #nav-bar .container {
+        width: 100vw;
+        column-gap: 0px;
+    }
+    #nav-bar .container a {
+        padding-right: 10px;
+    }
+    /* 4. Phần Thông tin cá nhân */
+    #about .container {
+        display: grid;   
+        grid-template-columns: 1fr 1fr;
+      }
+    #about .container {
+        width: 90vw;
+        padding: 0px;
+        margin: auto;
+
+    }
+    #target {
+        padding: 0px;
+    }
+    #target h1 {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    #personal-info h1,
+    #personal-info div {
+      padding-left: 15px;
+    }
+    #personal-info h1{
+        padding-bottom: 20px;
+    }
+    /* .container, .container-sm Vì trong bootstrap có set up cho class có tên là container nàyn, nó set max-width: 540px; nên giờ gán cứng nó lại*/
+   .container-sm {
+        max-width: 768px !important;
+    }
+    /* 5. Phần Thông tin nghề nghiệp */
+    #job-info .container {
+        width: 100vw;
+        padding: 0px;
+
+      }
+      /* 6. Phần Chứng chỉ - Giải thưởng */
+    
+    #certificate .container {
+      width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      #certificate .container h1 {
+        padding-left: 0px;
+        grid-column: 1 / span 2;
+      }
+      #certificate img {
+        width: 40vw;
+        height: 40vh;
+        padding-left: 0.5vw;
+
+    }
+    /* 7. Phần dự án */
+    /* #project div div img {
+        width: 25vw;
+        height: 27vh;
+      } */
+      #project .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        padding: 0;
+      }
+      #project .container h1 {
+        grid-column: 1 / span 3;
+      }
+
+
+      #project div div div:nth-child(2) {
+        padding-left: 0px;
+      }
+      #project div div div:nth-child(3) {
+        padding-left: 0px;
+        display: grid;
+        grid-template-columns: 4fr 1fr 4fr;
+      }
+      /* xử lý phần thời gian dự án */
+      #project div div div:nth-child(3) span {
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-row: 1 / span 2;
+      }
+      /* xử lý phần mô tả dự án */
+     
+      #project div div table tr td:first-child {
+        width: 50px; 
+      }
+       /* 8. Phần Footer */
+  #footer { 
+    width: 110vw;
+  }
+
+
+}
+ 

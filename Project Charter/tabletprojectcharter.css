@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+  .section {
+    /* display: grid ; */
+    grid-template-columns: 1fr !important;
+  }
+  .timeline,
+  .goals {
+    height: auto;
+}
+/* xử lý phần goals và phần team, primary*/
+.team,
+.goals {
+    height: auto !important;
+}
+.member div span:first-child,
+.primary div span:first-child,
+.goalsdetail div span:first-child {
+    float: none !important;
+    padding-left: 45%;
+    display: block;
+
+}
+ 
+/* Xử lý scopes */
+.scopesdetail div span {
+    line-height: 35px;
+}
+.scopesdetail div h4 {
+    padding-top: 20px;
+}
+/* xử lý phần timeline */
+.timeline div span:first-child {
+    float: none !important;
+
+    display: block;
+}
+.timeline div div {
+    margin-left: 0px;
+}
+/* set lại margin 4 hướng cho màn hình tablet */
+.goalsscopes {
+    margin-top: 20px;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+.teamprimary {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.timeline {
+    margin-left: 20.5px !important;
+    margin-right: 20.5px !important;
+    margin-bottom: 20px !important;
+}
+}

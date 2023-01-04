@@ -1,0 +1,94 @@
+/* Set styleprojectcharter cho màn hình destop luôn */
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue !important;
+    margin: auto;
+}
+.main {
+    background-color: white;
+    margin: 2.5px;
+}
+.section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: auto;
+}
+.main h1{
+    color:blue;
+    padding: 15px;
+    margin: 5px;
+    /* margin-right: 15px; */
+    border-bottom: 1px solid wheat;
+}
+/* xử lý goals */
+.goalsscopes {
+    margin-left: 2.5px;
+
+}
+.goals {
+    height: 60vh;
+}
+.goalsdetail {
+    padding: 20px;
+}
+.goalsdetail div {
+    border-bottom: 1px solid wheat;
+    clear: both;
+}
+.goalsdetail div span:first-child {
+    font-size: 70px;
+    float: left;
+}
+/* xử lý phần scopes */
+.scopes {
+    height: auto;
+    min-height: 40vh;
+}
+.scopesdetail {
+  /* margin: 15px !important; */
+  padding-bottom: 40px;
+} 
+.scopes div {
+    padding: 20px;
+}
+/* xử lý team */
+.team {
+    height: 60vh;
+}
+.timeline div span:first-child,
+.primary div span:first-child,
+.member div span:first-child {
+    font-size: 40px;
+    float: left;
+    padding-right: 10px;
+
+}
+.primary div,
+.member div {
+    margin-left: 20px;
+    clear: both;
+    padding-bottom: 20px;
+}
+/* xử lý primary */
+.primary {
+    height: auto;
+    min-height: 40vh;
+}
+/* xử lý timeline */
+.timeline div {
+    margin-left: 20px;
+    padding-bottom: 15px;
+    
+}
+.timeline {
+    height: auto%;
+    margin-top:5px;
+    margin-right: 5px;
+}
+.timeline div span:first-child {
+    color: blueviolet;
+}
+ 
+ 
+ 

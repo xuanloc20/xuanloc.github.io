@@ -1,0 +1,78 @@
+@media screen and (max-width : 576px) {
+    
+     /* yêu cầu: 3. Phần Navbar ở moblie  ẩn ảnh và giàn hàng dọc + dời vào vài chục px */
+    #nav-bar .container div {
+        display: none;
+    }
+    #nav-bar .container a {
+        display: block;
+    }
+    #banner {
+        padding-bottom: 0px !important;
+      } 
+    #nav-bar .container {
+        width: 100vw;
+        text-align:left;
+        line-height: 35px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 50px;
+        display: block;
+      }
+    /* 4. Phần Thông tin cá nhân */
+    /* 5. Phần Thông tin nghề nghiệp */
+    
+    #job-info .container {
+      width: 100vw;
+    }
+    /* 6. Phần Chứng chỉ - Giải thưởng */
+    #certificate .container {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .cc3 {
+      border-bottom: #d6c08d 1px solid;
+    }
+    #certificate img {
+      /* object-fit:fill; */
+      width: 80vw;
+      height: 50vh;
+      padding-left: 0.5vw;
+
+  }
+    /* 7. Phần dự án */
+  #project .container {
+    width: 97vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    padding: 0;
+  }
+  /* xử lý phần hình ảnh */
+  #project div div a img {
+    width: 97vw;
+    height: 280px;
+    object-fit: cover;
+  }
+  /* xử lý phần mô tả thông tin dự án */
+  #project div div div:nth-child(3) {
+    display: grid;
+    grid-template-columns:  1fr 8fr;
+  }
+  /* xử lý phần thời gian dự án */
+  #project div div div:nth-child(3) span {
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-column: 1 / span 2;
+    justify-self: start;
+  }
+  /* 8. Phần Footer */
+  #footer .container{ 
+    width: 100vw;
+  }
+  #footer div ul li a i {
+    color: #199cdb;
+    font-size: 4vw;
+  }
+}

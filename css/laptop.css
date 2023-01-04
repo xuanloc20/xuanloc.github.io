@@ -1,0 +1,45 @@
+ @media screen and (min-width : 768px) {
+    
+     /* yêu cầu: 3. Phần Navbar ở laptop kế thừa ass2 nên đây ko làm gì */
+    /* 4. Phần Thông tin cá nhân , đưa phần css từ style.css vào đây*/
+
+     #about .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      
+
+      /* 5. Phần Thông tin nghề nghiệp */
+      #job-info .container {
+         padding: 0px;
+         width: 100vw;
+      }
+         /* 6. Phần Chứng chỉ - Giải thưởng */
+    #certificate img {
+      padding-left: 20px;
+   }
+   #certificate .container {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    #certificate .container h1 {
+      padding-left: 0px;
+      grid-column: 1 / span 2;
+    }
+    /* 7. Phần dự án */
+    #project .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      padding: 0;
+    }
+    #project .container h1 {
+      grid-column: 1 / span 3;
+    }
+         /* 8. Phần Footer */
+  #footer { 
+   width: 100vw;
+ }
+    
+ }
